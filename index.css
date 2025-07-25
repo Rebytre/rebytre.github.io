@@ -10,37 +10,41 @@ body {
 }
 
 .container{
+    width: 100%;
+    height: 92vh;
     display: grid;
-    grid-template-rows: 0.5fr, 1fr, 3fr;
-    grid-template-columns: 1fr, 3fr, 1fr;
+    grid-template-rows: 1fr 8fr 2fr;
+    grid-template-columns: 1fr 1.5fr 4.5fr 1fr;
+    column-gap: 2vh;
+    row-gap: 2vh;
 }
 
 /*Navigation Container*/
 #navContainer{
     /*Grid Position*/
     grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
     /*Grid*/
     display: grid;
-    grid-template-columns: 0.1fr, 4fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 8fr 1fr;
+    column-gap: 2vh;
     /*Customization*/
     background-color:#3333339f;
-    border-radius: 10px;
+    border-radius: 2vh;
     color: #ffffff;
     font-family: verdana;
-    font-size: 18px;
-    padding-left: 5%;
+    font-size: 2vh;
     text-align: center;
 }
 
 #home{
     box-sizing: border-box;
-    border: medium,solid,#ffffff00;
-    border-radius: 10px;
-    grid-column-start: 3;
-    grid-column-end: 3;
+    border: medium solid #ffffff00;
+    border-radius: 2vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 #home:hover{
@@ -50,10 +54,10 @@ body {
 
 #projects{
     box-sizing: border-box;
-    border: medium,solid,#ffffff00;
-    border-radius: 10px;
-    grid-column-start: 4;
-    grid-column-end: 4;
+    border: medium solid #ffffff00;
+    border-radius: 2vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 #projects:hover{
@@ -63,10 +67,10 @@ body {
 
 #socials{
     box-sizing: border-box;
-    border: medium,solid,#ffffff00;
-    border-radius: 10px;
-    grid-column-start: 5;
-    grid-column-end: 5;
+    border: medium solid #ffffff00;
+    border-radius: 2vh;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 #socials:hover{
@@ -76,13 +80,50 @@ body {
 
 #about{
     box-sizing: border-box;
-    border: medium,solid,#ffffff00;
-    border-radius: 10px;
-    grid-column-start: 6;
-    grid-column-end: 6;
+    border: medium solid #ffffff00;
+    border-radius: 2vh;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 #about:hover{
     background-color: #4242429f;
     border-color: #ffffffff;
+}
+
+/*Header Container*/
+#headerContainer{
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
+}
+
+/*Personal Container*/
+#personalContainer{
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+#personalIcon{
+    border-radius: 2vh;
 }
