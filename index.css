@@ -5,7 +5,7 @@ By: Rebytre
 
 */
 
-body {
+body{
     background-color: #202020;
 }
 
@@ -43,6 +43,7 @@ body {
     box-sizing: border-box;
     border: medium solid #ffffff00;
     border-radius: 2vh;
+    cursor: pointer;
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -56,6 +57,7 @@ body {
     box-sizing: border-box;
     border: medium solid #ffffff00;
     border-radius: 2vh;
+    cursor: pointer;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -69,6 +71,7 @@ body {
     box-sizing: border-box;
     border: medium solid #ffffff00;
     border-radius: 2vh;
+    cursor: pointer;
     grid-column-start: 3;
     grid-column-end: 4;
 }
@@ -82,6 +85,7 @@ body {
     box-sizing: border-box;
     border: medium solid #ffffff00;
     border-radius: 2vh;
+    cursor: pointer;
     grid-column-start: 4;
     grid-column-end: 5;
 }
@@ -126,4 +130,58 @@ body {
 
 #personalIcon{
     border-radius: 2vh;
+}
+
+/*Projects Container*/
+#projectsContainer{
+    /*Visibility*/
+    visibility: hidden;
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
+}
+
+/*Socials Container*/
+#socialsContainer{
+    /*Visibility*/
+    visibility: hidden;
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
+}
+
+/*About Me Container*/
+#aboutMeContainer{
+    /*Visibility*/
+    visibility: hidden;
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
 }
