@@ -5,31 +5,34 @@ By: Rebytre
 
 */
 
+/*---Main Background---*/
 body{
-    background-color: #202020;
+    background-color: #030303;
 }
 
+/*---Main Grid---*/
 .container{
     width: 100%;
     height: 92vh;
     display: grid;
-    grid-template-rows: 1fr 8fr 2fr;
-    grid-template-columns: 1fr 1.5fr 4.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 8fr 0.5fr;
+    grid-template-columns: 0.5fr 1.5fr 4.5fr 0.5fr;
     column-gap: 2vh;
     row-gap: 2vh;
 }
 
-/*Navigation Container*/
+/*---Navigation Container---*/
 #navContainer{
     /*Grid Position*/
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 4;
     /*Grid*/
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 8fr 1fr;
-    column-gap: 2vh;
+    column-gap: 1svh;
+    column-rule: 10px solid #ffffff;
     /*Customization*/
     background-color:#3333339f;
     border-radius: 2vh;
@@ -39,6 +42,8 @@ body{
     text-align: center;
 }
 
+/*--Navigation Items--*/
+/*-Home-*/
 #home{
     box-sizing: border-box;
     border: medium solid #ffffff00;
@@ -53,6 +58,7 @@ body{
     border-color: #ffffffff;
 }
 
+/*-Projects-*/
 #projects{
     box-sizing: border-box;
     border: medium solid #ffffff00;
@@ -67,6 +73,7 @@ body{
     border-color: #ffffffff;
 }
 
+/*-Socials-*/
 #socials{
     box-sizing: border-box;
     border: medium solid #ffffff00;
@@ -81,6 +88,7 @@ body{
     border-color: #ffffffff;
 }
 
+/*-About-*/
 #about{
     box-sizing: border-box;
     border: medium solid #ffffff00;
@@ -95,11 +103,36 @@ body{
     border-color: #ffffffff;
 }
 
-/*Personal Container*/
+/*---Menu Items---*/
+
+/*--Personal Icon--*/
+#personalIcon{
+    border-radius: 50%;
+    border: medium solid #bebebe;
+}
+
+/*--Content Container--*/
+#contentContainer{
+    /*Grid Position*/
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff00;
+}
+
+.titleWithBorder{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 2svh;
+}
+
+/*-Personal Container-*/
 #personalContainer{
     /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
     /*Customization*/
@@ -112,21 +145,17 @@ body{
     padding-top: 3vh;
 }
 
-#personalIcon{
-    border-radius: 2vh;
-}
-/*Header Container*/
+/*-Header Container-*/
 #homeContainer{
     /*Visibility*/
     visibility: visible;
     opacity: 1;
     /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
-    background-color:#3333339f;
     border-radius: 2vh;
     color: #ffffff;
     font-family: verdana;
@@ -134,18 +163,17 @@ body{
     text-align: center;
 }
 
-/*Projects Container*/
+/*-Projects Container-*/
 #projectsContainer{
     /*Visibility*/
     visibility: hidden;
     opacity: 0;
     /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
-    background-color:#3333339f;
     border-radius: 2vh;
     color: #ffffff;
     font-family: verdana;
@@ -153,18 +181,17 @@ body{
     text-align: center;
 }
 
-/*Socials Container*/
+/*-Socials Container-*/
 #socialsContainer{
     /*Visibility*/
     visibility: hidden;
     opacity: 0;
     /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
-    background-color:#3333339f;
     border-radius: 2vh;
     color: #ffffff;
     font-family: verdana;
@@ -172,18 +199,18 @@ body{
     text-align: center;
 }
 
-/*About Me Container*/
+/*-About Me Container-*/
 #aboutMeContainer{
     /*Visibility*/
     visibility: hidden;
     opacity: 0;
     /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
-    background-color:#3333339f;
+    
     border-radius: 2vh;
     color: #ffffff;
     font-family: verdana;
