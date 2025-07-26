@@ -95,22 +95,6 @@ body{
     border-color: #ffffffff;
 }
 
-/*Header Container*/
-#headerContainer{
-    /*Grid Position*/
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    /*Customization*/
-    background-color:#3333339f;
-    border-radius: 2vh;
-    color: #ffffff;
-    font-family: verdana;
-    font-size: 2vh;
-    text-align: center;
-}
-
 /*Personal Container*/
 #personalContainer{
     /*Grid Position*/
@@ -131,15 +115,34 @@ body{
 #personalIcon{
     border-radius: 2vh;
 }
+/*Header Container*/
+#homeContainer{
+    /*Visibility*/
+    visibility: visible;
+    opacity: 1;
+    /*Grid Position*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    /*Customization*/
+    background-color:#3333339f;
+    border-radius: 2vh;
+    color: #ffffff;
+    font-family: verdana;
+    font-size: 2vh;
+    text-align: center;
+}
 
 /*Projects Container*/
 #projectsContainer{
     /*Visibility*/
     visibility: hidden;
+    opacity: 0;
     /*Grid Position*/
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
     background-color:#3333339f;
@@ -154,10 +157,11 @@ body{
 #socialsContainer{
     /*Visibility*/
     visibility: hidden;
+    opacity: 0;
     /*Grid Position*/
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
     background-color:#3333339f;
@@ -172,10 +176,11 @@ body{
 #aboutMeContainer{
     /*Visibility*/
     visibility: hidden;
+    opacity: 0;
     /*Grid Position*/
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     /*Customization*/
     background-color:#3333339f;
@@ -183,5 +188,7 @@ body{
     color: #ffffff;
     font-family: verdana;
     font-size: 2vh;
+    text-align: center;
+}
     text-align: center;
 }
