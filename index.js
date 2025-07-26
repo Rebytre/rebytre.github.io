@@ -72,3 +72,5 @@ function aboutMeClicked() {
         setTimeout(function() {document.getElementById('aboutMeContainer').style.opacity = i * 0.1;}, i * 50);
     }
 }
+
+
