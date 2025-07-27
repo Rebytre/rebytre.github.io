@@ -106,7 +106,7 @@ body{
 /*---Menu Items---*/
 
 /*--Personal Icon--*/
-#personalIcon{
+.personalIcon{
     border-radius: 50%;
     border: medium solid #bebebe;
 }
@@ -166,6 +166,10 @@ body{
 /*-Projects Container-*/
 #projectsContainer{
     /*Visibility*/
+    display: grid;
+    height:100%;
+    overflow-y:auto;
+    scrollbar-width: none;
     visibility: hidden;
     opacity: 0;
     /*Grid Position*/
