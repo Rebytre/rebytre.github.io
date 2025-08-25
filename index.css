@@ -125,7 +125,7 @@ body{
 
 .titleWithBorder{
     border-bottom: 2px solid #ffffff;
-    padding-bottom: 2svh;
+    padding-bottom: 10px;
 }
 
 /*-Personal Container-*/
@@ -220,4 +220,12 @@ body{
     font-family: verdana;
     font-size: 2vh;
     text-align: center;
+}
+
+.projectContainer{
+    background-color: #111111;
+    border-radius: 2vw;
+    cursor: pointer;
+    width: 20vw;
+    height: 20vw;
 }
