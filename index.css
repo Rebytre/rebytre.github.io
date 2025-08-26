@@ -7,7 +7,12 @@ By: Rebytre
 
 /*---Main Background---*/
 body{
-    background-color: #030303;
+    background-color: #0f0e0f;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #ffffff
 }
 
 /*---Main Grid---*/
@@ -17,8 +22,8 @@ body{
     display: grid;
     grid-template-rows: 0.5fr 1fr 8fr 0.5fr;
     grid-template-columns: 0.5fr 1.5fr 4.5fr 0.5fr;
-    column-gap: 2vh;
-    row-gap: 2vh;
+    column-gap: 2vw;
+    row-gap: 2vw;
 }
 
 /*---Navigation Container---*/
@@ -31,11 +36,11 @@ body{
     /*Grid*/
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 8fr 1fr;
-    column-gap: 1svh;
+    column-gap: 1vw;
     column-rule: 10px solid #ffffff;
     /*Customization*/
     background-color:#3333339f;
-    border-radius: 2vh;
+    border-radius: 1vw;
     color: #ffffff;
     font-family: verdana;
     font-size: 2vh;
@@ -47,7 +52,7 @@ body{
 #home{
     box-sizing: border-box;
     border: medium solid #ffffff00;
-    border-radius: 2vh;
+    border-radius: 1vw;
     cursor: pointer;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -62,7 +67,7 @@ body{
 #projects{
     box-sizing: border-box;
     border: medium solid #ffffff00;
-    border-radius: 2vh;
+    border-radius: 1vw;
     cursor: pointer;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -77,7 +82,7 @@ body{
 #socials{
     box-sizing: border-box;
     border: medium solid #ffffff00;
-    border-radius: 2vh;
+    border-radius: 1vw;
     cursor: pointer;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -92,7 +97,7 @@ body{
 #about{
     box-sizing: border-box;
     border: medium solid #ffffff00;
-    border-radius: 2vh;
+    border-radius: 1vw;
     cursor: pointer;
     grid-column-start: 4;
     grid-column-end: 5;
@@ -108,7 +113,7 @@ body{
 /*--Personal Icon--*/
 .personalIcon{
     border-radius: 50%;
-    border: medium solid #bebebe;
+    border: medium solid #ffffff;
 }
 
 /*--Content Container--*/
@@ -125,7 +130,7 @@ body{
 
 .titleWithBorder{
     border-bottom: 2px solid #ffffff;
-    padding-bottom: 10px;
+    padding-bottom: 1vw;
 }
 
 /*-Personal Container-*/
@@ -166,7 +171,6 @@ body{
 /*-Projects Container-*/
 #projectsContainer{
     /*Visibility*/
-    display: grid;
     height:100%;
     overflow-y:auto;
     scrollbar-width: none;
@@ -183,6 +187,14 @@ body{
     font-family: verdana;
     font-size: 2vh;
     text-align: center;
+}
+
+/*Projects Items Container*/
+#projectsItemsContainer{
+    gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    justify-content: center;
 }
 
 /*-Socials Container-*/
@@ -215,7 +227,7 @@ body{
     grid-column-end: 4;
     /*Customization*/
     
-    border-radius: 2vh;
+    border-radius: 1vw;
     color: #ffffff;
     font-family: verdana;
     font-size: 2vh;
@@ -226,6 +238,15 @@ body{
     background-color: #111111;
     border-radius: 2vw;
     cursor: pointer;
-    width: 20vw;
-    height: 20vw;
+    width: 500px;
+    height: 500px;
+    font-size: 2vh;
 }
+
+.projectAsset{
+    margin-top: 1vw;
+    border-radius: 1vw;
+    width: 350px;
+    height: 350px;
+}
+
