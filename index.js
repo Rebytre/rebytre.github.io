@@ -5,10 +5,12 @@ By: Rebytre
 
 */
 
-const homeContainer = document.getElementById('homeContainer');
-const projectsContainer = document.getElementById('projectsContainer');
-const socialsContainer = document.getElementById('socialsContainer');
-const aboutMeContainer = document.getElementById('aboutMeContainer');
+document.addEventListener("DOMContentLoaded", () => {
+    const homeContainer = document.getElementById('homeContainer');
+    const projectsContainer = document.getElementById('projectsContainer');
+    const socialsContainer = document.getElementById('socialsContainer');
+    const aboutMeContainer = document.getElementById('aboutMeContainer');
+}
 
 function homeClicked() {
     if (window.getComputedStyle(homeContainer).visibility === 'hidden') {
@@ -85,6 +87,7 @@ function aboutMeClicked() {
         }
     }
 }
+
 
 
 
