@@ -19,11 +19,11 @@ By: Rebytre
         <meta property="og:url" content="###">
         <link href="index.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
-        <link href="Icon.jpg" rel="icon" type="image/jpg">
+        <link href="assets\Icon.jpg" rel="icon" type="image/jpg">
     </head>
     <body>
         <div class="container">
-            <div id="navContainer">
+            <nav id="navContainer">
                 <div id="home" onclick="homeClicked()">
                     <h3>Home</h3>
                 </div>
@@ -36,12 +36,12 @@ By: Rebytre
                 <div id="about" onclick="aboutMeClicked()">
                     <h3>About Me</h3>
                 </div>
-            </div>
+            </nav>
 
             <!--Personal Container-->
             <div id="personalContainer">
                 <a href="https://github.com/Rebytre" hreflang = "en" target="_blank">
-                    <img class="personalIcon" alt="Icon.jpg" src="Assets\Icon.jpg" width="200vw" height="200vw" media="(max-width: 1439px)" type="image/jpg">
+                    <img class="personalIcon" alt="Icon.jpg" src="assets\Icon.jpg" width="200vw" height="200vw" media="(max-width: 1439px)" type="image/jpg">
                 </a>
                 <h2 class="titleWithBorder">Rebytre</h2>
             </div>
@@ -59,9 +59,25 @@ By: Rebytre
             <!--Projects-->
             <div id="projectsContainer">
                 <h1 class="titleWithBorder">Projects</h1>
-                    <div class="projectContainer">
-                        <img alt="BlackJack2025" src="Assets\BlackJack2025.png" width="250vw" height="250vw" type="image/png">
-                    </div>
+                <div id="projectsItemsContainer">
+
+                    <a class = "projectContainer" href="https://github.com/Rebytre/Black-Jack-2025" hreflang="en" target="_blank">
+                        <img class='projectAsset' alt="BlackJack2025" src="assets\BlackJack2025.png" type="image/png">
+                        <h4>BlackJack 2025</h4>
+                    </a>
+
+                    <a class = "projectContainer" href="https://rebytre.github.io/HTML-Basics/" hreflang="en" target="_blank">
+                        <img class='projectAsset' alt="HTML Basics" src="assets\HTMLBasics.png" type="image/png">
+                        <h4>HTML Basics</h4>
+                    </a>
+
+                    <a class = "projectContainer" href="https://rebytre.github.io/HTML-Basics/" hreflang="en" target="_blank">
+                        <img class='projectAsset' alt="HTML Basics" src="assets\HTMLBasics.png" type="image/png">
+                        <h4>HTML Basics</h4>
+                    </a>
+                </div>
+
+                
             </div>
 
             <!--Socials-->
@@ -77,4 +93,5 @@ By: Rebytre
         </div>
     </body>
 </html>
+
 
