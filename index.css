@@ -87,7 +87,7 @@ body {
     background-color: #000000;
     cursor: pointer;
 }
-#homeBody {
+#homeContainer {
     animation: headerAnimation 30s ease-in-out infinite;
     background-color: #f1eff0;
     height: 100vh;
@@ -114,25 +114,36 @@ body {
         background-color: #b862ff;
     }
 }
+#homeBody{
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    height: 20vh;
+    padding: 30vh 25vw 25vw 0;
+}
 #mainTitle{
+    text-align: center;
+    grid-column: 1/2;
     margin: 0;
     font-size: 10vh;
-    position: relative;
     font-family: Courier New, monospace;
     font-weight: 600;
 }
 #mainSubtitle{
+    text-align: center;
+    grid-column: 1/2;
     margin-top: 0;
-    position: relative;
     font-size: 2vh;
     font-family: monospace;
 }
 #mainIcon{
+    position: absolute;
+    grid-column: 2/3;
+    top: 46.3%;
+    left: 63.3%;
     animation: mainIconRotate 3s ease-in-out infinite;
     animation-direction: normal;
     border-radius: 50%;
     z-index: 1;
-    position: relative;
 }
 @keyframes mainIconRotate {
     0% {
@@ -143,11 +154,18 @@ body {
     }
 }
 #mainIconDecoration{
+    grid-column: 2/3;
+    position: absolute;
     width: 250px;
     height: 250px;
     background-color: #be13a2;
-    position: relative;
     z-index: 0;
     animation-delay: 0.5s;
     border-radius: 100% 30% 80% 70% / 50% 80% 60% 50%;
+}
+iconContainer{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    grid-row: 1/2;
 }
