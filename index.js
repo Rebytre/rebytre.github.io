@@ -19,8 +19,11 @@ function homeClicked() {
         document.getElementById('socialsContainer').style.visibility = 'hidden';
         document.getElementById('socialsContainer').style.opacity = 0;
         //About Me Items
-        document.getElementById('aboutMeContainer').style.visibility = 'hidden';
-        document.getElementById('aboutMeContainer').style.opacity = 0;
+        document.getElementById('aboutContainer').style.visibility = 'hidden';
+        document.getElementById('aboutContainer').style.opacity = 0;
+        //Blog Items
+        document.getElementById('blogContainer').style.visibility = 'hidden';
+        document.getElementById('blogContainer').style.opacity = 0;
     }
 }
 
@@ -38,8 +41,11 @@ function projectsClicked() {
         document.getElementById('socialsContainer').style.visibility = 'hidden';
         document.getElementById('socialsContainer').style.opacity = 0;
         //About Me Items
-        document.getElementById('aboutMeContainer').style.visibility = 'hidden';
-        document.getElementById('aboutMeContainer').style.opacity = 0;
+        document.getElementById('aboutContainer').style.visibility = 'hidden';
+        document.getElementById('aboutContainer').style.opacity = 0;
+        //Blog Items
+        document.getElementById('blogContainer').style.visibility = 'hidden';
+        document.getElementById('blogContainer').style.opacity = 0;
     }
 }
 
@@ -57,13 +63,16 @@ function socialsClicked() {
             setTimeout(function(){document.getElementById('socialsContainer').style.opacity = i * 0.1;}, i * 50);
         }
         //About Me Items
-        document.getElementById('aboutMeContainer').style.visibility = 'hidden';
-        document.getElementById('aboutMeContainer').style.opacity = 0;
+        document.getElementById('aboutContainer').style.visibility = 'hidden';
+        document.getElementById('aboutContainer').style.opacity = 0;
+        //Blog Items
+        document.getElementById('blogContainer').style.visibility = 'hidden';
+        document.getElementById('blogContainer').style.opacity = 0;
     }
 }
 
-function aboutMeClicked() {
-    if (window.getComputedStyle(aboutMeContainer).visibility === 'hidden') {
+function aboutClicked() {
+    if (window.getComputedStyle(aboutContainer).visibility === 'hidden') {
         //Home Items
         document.getElementById('homeContainer').style.visibility = 'hidden';
         document.getElementById('homeContainer').style.opacity = 0;
@@ -74,14 +83,36 @@ function aboutMeClicked() {
         document.getElementById('socialsContainer').style.visibility = 'hidden';
         document.getElementById('socialsContainer').style.opacity = 0;
         //About Me Items
-        document.getElementById('aboutMeContainer').style.visibility = 'visible';
+        document.getElementById('aboutContainer').style.visibility = 'visible';
         for (let i = 1; i <= 10; i++) {
-            setTimeout(function() {document.getElementById('aboutMeContainer').style.opacity = i * 0.1;}, i * 50);
+            setTimeout(function() {document.getElementById('aboutContainer').style.opacity = i * 0.1;}, i * 50);
         }
+        //Blog Items
+        document.getElementById('blogContainer').style.visibility = 'hidden';
+        document.getElementById('blogContainer').style.opacity = 0;
     }
 }
 
-
+function blogClicked() {
+    if (window.getComputedStyle(aboutContainer).visibility === 'hidden') {
+        //Home Items
+        document.getElementById('homeContainer').style.visibility = 'hidden';
+        document.getElementById('homeContainer').style.opacity = 0;
+        //Projects Items
+        document.getElementById('projectsContainer').style.visibility = 'hidden';
+        document.getElementById('projectsContainer').style.opacity = 0;
+        //Socials Items
+        document.getElementById('socialsContainer').style.visibility = 'hidden';
+        document.getElementById('socialsContainer').style.opacity = 0;
+        //About Me Items
+        document.getElementById('aboutContainer').style.visibility = 'hidden';
+        //Blog Items
+        document.getElementById('blogContainer').style.visibility = 'visible';
+        for (let i = 1; i <= 10; i++) {
+            setTimeout(function() {document.getElementById('blogContainer').style.opacity = i * 0.1;}, i * 50);
+        }
+    }
+}
 
 
 
