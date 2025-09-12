@@ -24,21 +24,26 @@ By: Rebytre
     <body>
         <div id="topBarDecoration"></div>
         <nav id="topNav">
-            <div id="home"><img src="assets/home.png" alt="home" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Home</div>
-            <div id="about"><img src="assets/about.png" alt="about" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">About</div>
-            <div id="projects"><img src="assets/projects.png" alt="projects" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Projects</div>
-            <div id="blog"><img src="assets/blog.png" alt="blog" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Blog</div>
-            <div id="socials"><img src="assets/social.png" alt="socials" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Socials</div>
+            <div id="home" onclick="homeClicked()"><img src="assets/home.png" alt="home" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Home</div>
+            <div id="about" onclick="aboutClicked()"><img src="assets/about.png" alt="about" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">About</div>
+            <div id="projects" onclick="projectsClicked()"><img src="assets/projects.png" alt="projects" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Projects</div>
+            <div id="blog" onclick="blogClicked()"><img src="assets/blog.png" alt="blog" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Blog</div>
+            <div id="socials" onclick="socialsClicked()"><img src="assets/social.png" alt="socials" height="20px" width="20px" style="padding-right:10px; position:relative; top:2px">Socials</div>
         </nav>
         <div id="homeContainer">
             <div id="homeBody">
                 <h1 id="mainTitle">Rebytre</h1>
                 <h3 id="mainSubtitle">Welcome to my personal website! &#128075;</h3>
-                <div id="iconContainer">
-                    <a href="https://github.com/Rebytre" hreflang = "en" target="_blank"><img id="mainIcon" alt="Icon.jpg" src="assets\Icon.jpg" width="200px" height="200px" type="image/jpg"></a>
-                    <div id="mainIconDecoration"></div>
-                </div>
+                    <a href="https://github.com/Rebytre" id="mainIconDecoration" hreflang="en" target="_blank"><img id="mainIcon" alt="Icon.jpg" src="assets\Icon.jpg" width="200px" height="200px" type="image/jpg"></a>
             </div>
+        </div>
+        <div id="aboutContainer">
+        </div>
+        <div id="projectsContainer">
+        </div>
+        <div id="blogContainer">
+        </div>
+        <div id="socialsContainer">
         </div>
     </body>
 </html>
