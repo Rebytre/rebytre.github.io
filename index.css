@@ -35,6 +35,7 @@ body {
     transition: background-color 0.25s ease-in-out;
 }
 #home:hover {
+    border-bottom: #ad459c solid 0.3vh;
     text-decoration: underline;
     background-color: #000000;
     cursor: pointer;
@@ -47,6 +48,7 @@ body {
     transition: background-color 0.25s ease-in-out;
 }
 #about:hover {
+    border-bottom: #ad459c solid 0.3vh;
     text-decoration: underline;
     background-color: #000000;
     cursor: pointer;
@@ -59,6 +61,7 @@ body {
     transition: background-color 0.25s ease-in-out;
 }
 #projects:hover {
+    border-bottom: #ad459c solid 0.3vh;
     text-decoration: underline;
     background-color: #000000;
     cursor: pointer;
@@ -71,6 +74,7 @@ body {
     transition: background-color 0.25s ease-in-out;
 }
 #blog:hover {
+    border-bottom: #ad459c solid 0.3vh;
     text-decoration: underline;
     background-color: #000000;
     cursor: pointer;
@@ -83,13 +87,20 @@ body {
     transition: background-color 0.25s ease-in-out;
 }
 #socials:hover {
+    border-bottom: #ad459c solid 0.3vh;
     text-decoration: underline;
     background-color: #000000;
     cursor: pointer;
 }
 #homeContainer {
+    position: absolute;
+    visibility: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     animation: headerAnimation 30s ease-in-out infinite;
     background-color: #f1eff0;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -115,14 +126,17 @@ body {
     }
 }
 #homeBody{
+    grid-column: 2/3;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr 1fr;
     height: 20vh;
-    padding: 30vh 25vw 25vw 0;
 }
 #mainTitle{
     text-align: center;
     grid-column: 1/2;
+    grid-row: 2/3;
     margin: 0;
     font-size: 10vh;
     font-family: Courier New, monospace;
@@ -131,15 +145,14 @@ body {
 #mainSubtitle{
     text-align: center;
     grid-column: 1/2;
+    grid-row: 3/4;
     margin-top: 0;
     font-size: 2vh;
     font-family: monospace;
 }
 #mainIcon{
-    position: absolute;
     grid-column: 2/3;
-    top: 46.3%;
-    left: 63.3%;
+    grid-row: 2/3;
     animation: mainIconRotate 3s ease-in-out infinite;
     animation-direction: normal;
     border-radius: 50%;
@@ -154,8 +167,13 @@ body {
     }
 }
 #mainIconDecoration{
+    margin-left: 2vw;
     grid-column: 2/3;
-    position: absolute;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2vh;
     width: 250px;
     height: 250px;
     background-color: #be13a2;
@@ -163,9 +181,32 @@ body {
     animation-delay: 0.5s;
     border-radius: 100% 30% 80% 70% / 50% 80% 60% 50%;
 }
-iconContainer{
-    position: relative;
-    width: 250px;
-    height: 250px;
-    grid-row: 1/2;
+
+#aboutContainer{
+    position: absolute;
+    visibility: hidden;
+    background-color: #1a1919;
+    width: 100vw;
+    height: 100vh;
+}
+#projectsContainer{
+    position: absolute;
+    visibility: hidden;
+    background-color: #1a1919;
+    width: 100vw;
+    height: 100vh;
+}
+#blogContainer{
+    position: absolute;
+    visibility: hidden;
+    background-color: #1a1919;
+    width: 100vw;
+    height: 100vh;
+}
+#socialsContainer{
+    position: absolute;
+    visibility: hidden;
+    background-color: #1a1919;
+    width: 100vw;
+    height: 100vh;
 }
