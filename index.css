@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+a:link, a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 #topBarDecoration {
     background-color: #be13a2;
     width: 100%;
@@ -138,7 +143,7 @@ body {
     grid-column: 1/2;
     grid-row: 2/3;
     margin: 0;
-    font-size: 10vh;
+    font-size: 6em;
     font-family: Courier New, monospace;
     font-weight: 600;
 }
@@ -147,7 +152,7 @@ body {
     grid-column: 1/2;
     grid-row: 3/4;
     margin-top: 0;
-    font-size: 2vh;
+    font-size: 1.5em;
     font-family: monospace;
 }
 #mainIcon{
@@ -190,6 +195,8 @@ body {
     height: 100vh;
 }
 #projectsContainer{
+    display: flex;
+    justify-content: center;
     position: absolute;
     visibility: hidden;
     background-color: #1a1919;
@@ -210,17 +217,40 @@ body {
     width: 100vw;
     height: 100vh;
 }
+#innerProjectsContainer{
+    margin-top: 7vh;
+    width: 97vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 500px);
+    gap: 20px;
+    justify-content: center;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #3f3f3f;
+    border-radius: 2vw;
+}
 .projectContainer{
+    margin-top: 40px;
     background-color: #111111;
     border-radius: 2vw;
     cursor: pointer;
-    width: 500px;
+    width: 300px;
     height: 500px;
-    font-size: 2vh;
+    text-align: center;
+    font-family: verdana;
+    font-size: 1em;
+    color: #ffffff;
+    transition-duration: 0.25s;
+}
+.projectContainer:hover{
+    background-color: #222222;
+    transform: scale(1.05);
 }
 .projectAsset{
-    margin-top: 1vw;
     border-radius: 1vw;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
+
