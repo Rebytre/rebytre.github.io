@@ -210,3 +210,17 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.projectContainer{
+    background-color: #111111;
+    border-radius: 2vw;
+    cursor: pointer;
+    width: 500px;
+    height: 500px;
+    font-size: 2vh;
+}
+.projectAsset{
+    margin-top: 1vw;
+    border-radius: 1vw;
+    width: 350px;
+    height: 350px;
+}
