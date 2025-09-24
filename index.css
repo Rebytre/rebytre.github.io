@@ -160,6 +160,7 @@ a:link, a:visited{
     grid-row: 2/3;
     animation: mainIconRotate 3s ease-in-out infinite;
     animation-direction: normal;
+    transition-duration: 0.7s;
     border-radius: 50%;
     z-index: 1;
 }
@@ -183,10 +184,13 @@ a:link, a:visited{
     height: 250px;
     background-color: #be13a2;
     z-index: 0;
+    transition-duration: 0.5s;
     animation-delay: 0.5s;
     border-radius: 100% 30% 80% 70% / 50% 80% 60% 50%;
 }
-
+#mainIconDecoration:hover{
+    transform: scale(1.1);
+}
 #aboutContainer{
     position: absolute;
     visibility: hidden;
@@ -253,4 +257,5 @@ a:link, a:visited{
     width: 300px;
     height: 300px;
 }
+
 
